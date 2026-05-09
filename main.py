@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
-from agent.agent import run_agent
 
 app = FastAPI(title="Smart Technical Knowledge Assistant")
 
@@ -20,6 +19,7 @@ class Query(BaseModel):
 
 @app.post("/ask")
 def ask_agent(query: Query):
+    from agent.agent import run_agent
     result = run_agent(query.question)
     return {"response": result}
 
