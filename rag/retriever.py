@@ -1,6 +1,7 @@
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_community.embeddings import FakeEmbeddings, HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-
+embeddings = FakeEmbeddings(size=384)
+embeddings = FakeEmbeddings(size=384)
 def load_retriever(index_path="rag/index", k=3):
 
     # Load the same embedding model used during ingestion
