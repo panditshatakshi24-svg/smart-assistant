@@ -1,0 +1,4 @@
+The UART protocol is a serial communication method used in embedded systems. 
+It transmits data bit by bit over a single wire. Common baud rates include 
+9600, 115200. UART does not require a clock signal, making it asynchronous. 
+It is widely used for debugging microcontrollers via serial monitors.
