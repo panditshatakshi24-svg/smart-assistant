@@ -3,11 +3,12 @@ langchain-community
 langchain-huggingface
 langchain-text-splitters
 langchain-groq
-sentence-transformers
 faiss-cpu
 python-dotenv
 fastapi
-uvicorn
+uvicorn==0.24.0
 scikit-learn
 numpy
 aiofiles
+torch --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers
